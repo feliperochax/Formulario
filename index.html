@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <!--
+    <link rel="stylesheet" href="style.css">
+    -->
+</head>
+<body>
+
+
+    
+    <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+    <div>
+        <h1 id="titulo">Cadastro de DEVs - Kenzie Academy</h1>
+        <h3 id="subtitulo">Complete suas informações</h3>
+        <br>
+    </div>
+
+    <!-- Início do formulário -->
+<form>
+     <!-- Dados para login -->
+
+    <fieldset class="grupo">
+        <h2>Dados para login</h2>
+        <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+        <div class="campo">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="text" name="email" id="email" required>
+        </div>
+
+        <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+        <div class="campo">
+            <label for="senha"><strong>Senha</strong></label>
+            <input type="password" name="senha" id="senha" required>
+        </div>
+    </fieldset> 
+
+    <!-- Dados pessoais -->
+
+    <fieldset class="grupo">
+        <h2>Dados pessoais</h2>
+        <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+        <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+        <div class="campo">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+
+         <!-- Sexo -->
+
+        <label><strong>Sexo</strong></label>
+        <label>
+            <input type="radio" name="sexo" value="masculino" checked>Masculino
+        </label>
+        <label>
+            <input type="radio" name="sexo" value="feminino">Feminino
+        </label>
+        <label>
+            <input type="radio" name="sexo" value="prefironaoresponder">Prefiro não responder
+        </label>
+        </label>
+
+        <div class="campo">
+            <label for="CPF"><strong>CPF</strong></label>
+            <input type="text" name="cpf" placeholder="___.___.___-__" id="cpf" required>
+        </div>
+
+        <div class="campo">
+            <label for="telefone"><strong>Telefone</strong></label>
+            <input type="tel" name="telefone" placeholder="(XX)-XXXXX-XXXX" id="telefone" required>
+        </div>
+
+        <div class="campo">
+            <label for="nascimento"><strong>Data de Nascimento</strong></label>
+            <input type="date" name="nascimento" id="nascimento" required>
+        </div>
+
+    </div>
+    </fieldset> 
+
+
+     <!-- ENDEREÇO -->
+
+
+    <fieldset class="grupo">
+        <h2>Endereço</h2>
+        <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+        <div class="campo">
+            <label for="cep"><strong>CEP</strong></label>
+            <input type="text" name="cep" placeholder="__.___-___" id="cep" required>
+        </div>
+
+        <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+        <div class="campo">
+            <label for="rua"><strong>Rua</strong></label>
+            <input type="text" name="rua" id="rua" required>
+        </div>
+
+        <div class="campo">
+            <label for="numero"><strong>Número</strong></label>
+            <input type="number" name="numero" id="numero" required>
+        </div>
+
+        <div class="campo">
+            <label for="bairro"><strong>Bairro</strong></label>
+            <input type="text" name="bairro">
+        </div>
+
+        <div class="campo">
+            <label for="cidade"><strong>Cidade</strong></label>
+            <input type="text" name="cidade" id="cidade" required>
+        </div>
+
+        <div class="campo">
+            <label for="estado"><strong>Estado</strong></label>
+            <select name="estado" id="estado" required>
+                <option select disable value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+        </div>
+
+        <br>
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onsubmit="">Enviar formulário</button> 
+        
+    </div>
+    </fieldset> 
+
+</form>
+</body>
+</html>
